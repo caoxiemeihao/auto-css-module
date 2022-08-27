@@ -1,2 +1,3 @@
 # auto-css-module
-Automatic enable css-module in Babel, Vite
+
+It enables css-module in Babel, Vite automatically
