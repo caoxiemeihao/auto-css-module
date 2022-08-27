@@ -1,0 +1,44 @@
+{
+  "name": "auto-css-module",
+  "version": "0.0.0",
+  "description": "It enables css-module in Babel, Vite automatically",
+  "main": "",
+  "exports": {
+    "./babel": {
+      "import": "./dist/babel.js",
+      "require": "./dist/babel.js"
+    },
+    "./vite": {
+      "import": "./dist/vite.js",
+      "require": "./dist/vite.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caoxiemeihao/auto-css-module.git"
+  },
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build",
+    "//": "---- playground ----",
+    "vite": "vite serve -c playground/vite.config.js",
+    "babel": "webpack serve -c playground/webpack.config.js"
+  },
+  "dependencies": {
+    "vite-plugin-utils": "0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.3",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.7"
+  },
+  "keywords": [
+    "css-module",
+    "babel",
+    "vite",
+    "webpack",
+    "plugin"
+  ]
+}
