@@ -4,14 +4,8 @@
   "description": "It enables css-module in Babel, Vite automatically",
   "main": "",
   "exports": {
-    "./babel": {
-      "import": "./dist/babel.js",
-      "require": "./dist/babel.js"
-    },
-    "./vite": {
-      "import": "./dist/vite.js",
-      "require": "./dist/vite.js"
-    }
+    "./babel": "./dist/babel.js",
+    "./vite": "./dist/vite.js"
   },
   "repository": {
     "type": "git",
@@ -47,6 +41,9 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.0"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "css-module",
     "babel",
