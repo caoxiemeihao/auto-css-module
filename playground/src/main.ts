@@ -1,5 +1,12 @@
 
-const modules = import.meta.glob('./views/*/index.ts', { eager: true })
+// const modules = import.meta.glob('./views/*/index.ts', { eager: true })
+import * as foo from './views/foo'
+import * as bar from './views/bar'
+
+const modules = {
+  './views/foo/index.ts': foo,
+  './views/bar/index.ts': bar,
+}
 
 const htmls: string[] = []
 
