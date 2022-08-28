@@ -4,6 +4,7 @@
     "target": "ES2019",
     "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "moduleResolution": "Node"
   }
 }
