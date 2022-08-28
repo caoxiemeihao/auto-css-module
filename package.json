@@ -21,6 +21,9 @@
     "vite": "vite serve -c playground/vite.config.js",
     "babel": "webpack serve -c playground/webpack.config.js"
   },
+  "engines": {
+    "node": "^14.13.0 || >=12.20.0"
+  },
   "dependencies": {
     "vite-plugin-utils": "^0.2.1"
   },
