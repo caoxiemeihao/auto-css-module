@@ -57,6 +57,9 @@ export default function autoCssModule(options: Options = {}): Plugin {
             importee + `${importee.includes('?') ? '&' : '?'}.module${suffix}`,
           )
         },
+        // TODO:
+        // e.g.
+        // const styles = await import('./index.less');
       })
 
       const str = ms.toString()
