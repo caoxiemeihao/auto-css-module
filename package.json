@@ -1,6 +1,6 @@
 {
   "name": "auto-css-module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "It enables css-module in Babel, Vite automatically",
   "main": "",
   "exports": {
